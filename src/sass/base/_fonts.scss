@@ -1,0 +1,44 @@
+// Подключаем иконочный шрифт для иконок соцсетей
+@font-face {
+	font-family: 'icon-social';
+	src: url('../fonts/icon-social.eot?rpn8n5');
+	src: url('../fonts/icon-social.eot?rpn8n5#iefix') format('embedded-opentype'),
+		url('../fonts/icon-social.ttf?rpn8n5') format('truetype'),
+		url('../fonts/icon-social.woff?rpn8n5') format('woff'),
+		url('../fonts/icon-social.svg?rpn8n5#icon-social') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
+[class^='icon-'],
+[class*=' icon-'] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'icon-social' !important;
+	// speak: never;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+	content: '\e900';
+}
+.icon-instagramm:before {
+	content: '\e901';
+}
+.icon-linkedin:before {
+	content: '\e902';
+}
+.icon-twitter:before {
+	content: '\e903';
+}
+.icon-youtube:before {
+	content: '\e904';
+}
