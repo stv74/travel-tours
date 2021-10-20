@@ -1,7 +1,46 @@
-/**
- * Basic typography style for copy text
- */
+:root {
+	font-size: 1em;
+}
+
 body {
-  color: $text-color;
-  font: normal 125% / 1.4 $text-font-stack;
+	font-family: $basic-font-stack;
+	font-weight: 300;
+	color: #848484;
+}
+
+h1,
+h2 {
+	font-family: $header-font-stack;
+	font-weight: 700;
+}
+
+h1 {
+	font-size: 4rem;
+	line-height: 1.25;
+	color: #202336;
+}
+
+h2 {
+	font-size: 2.25rem;
+	line-height: 1.39;
+	color: #000000;
+}
+
+h3 {
+	font-family: $second-font-stack;
+}
+
+p {
+	font-size: 1.063rem;
+	line-height: 30px;
+	color: #7d7987;
+}
+
+a {
+	font-size: 1.125rem;
+	line-height: 2.11;
+	color: #848484;
+	:hover {
+		color: #848484;
+	}
 }
