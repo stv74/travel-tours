@@ -1,3 +1,33 @@
-// -----------------------------------------------------------------------------
-// This file contains all styles related to the header of the site/application.
-// -----------------------------------------------------------------------------
+.header {
+	padding-top: 2.1875em;
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		padding: 0 3.125em 0;
+	}
+	&__logo {
+		height: 2.5625em;
+		img {
+			height: 100%;
+		}
+	}
+	&__nav {
+		display: flex;
+		flex: 1;
+		align-items: center;
+		justify-content: flex-end;
+	}
+	&__menu,
+	&__login {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: flex;
+	}
+	&__menu {
+		flex: 1;
+	}
+	&__login {
+		flex: 282px;
+	}
+}
