@@ -1,3 +1,25 @@
-// -----------------------------------------------------------------------------
-// This file contains all styles related to the button component.
-// -----------------------------------------------------------------------------
+.button {
+	display: block;
+	width: 10.25em;
+	height: 3em;
+	font-family: $second-font-stack;
+	font-size: 1em;
+	font-weight: 600;
+	line-height: 3;
+	color: #ffffff;
+	text-align: center;
+	background: #fb8f1d;
+	border-radius: 8px;
+	&_header {
+		width: 8.25em;
+		height: 2.75em;
+		font-family: $second-font-stack;
+		font-size: 0.9375em;
+		font-weight: 500;
+		line-height: 3;
+		&-white {
+			background: #ffffff;
+			background-color: #fb8f1d;
+		}
+	}
+}

@@ -3,7 +3,7 @@
 	&__wrapper {
 		display: flex;
 		justify-content: space-between;
-		padding: 0 3.125em 0;
+		padding: 0 1.875em 0;
 	}
 	&__logo {
 		height: 2.5625em;
@@ -26,8 +26,24 @@
 	}
 	&__menu {
 		flex: 1;
+		justify-content: flex-end;
+		&-item {
+			margin-right: 35px;
+		}
+		&-link {
+			font-family: $second-font-stack;
+			font-weight: 400;
+			font-size: 1em;
+			line-height: 1.1875;
+			color: #b8becd;
+		}
+	}
+	&__active {
+		font-weight: 500;
+		color: $header-text-color;
 	}
 	&__login {
-		flex: 282px;
+		flex: 0 0 282px;
+		justify-content: space-between;
 	}
 }
