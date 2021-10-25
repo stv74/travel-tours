@@ -27,15 +27,19 @@
 	&__menu {
 		flex: 1;
 		justify-content: flex-end;
+		flex-wrap: wrap;
+		padding-left: 50px;
 		&-item {
-			margin-right: 35px;
+			margin: 5px 35px 5px 0;
+			// margin-right: 35px;
 		}
 		&-link {
+			display: block;
 			font-family: $second-font-stack;
 			font-weight: 400;
 			font-size: 1em;
 			line-height: 1.1875;
-			color: #b8becd;
+			color: $menu-text-color;
 		}
 	}
 	&__active {
