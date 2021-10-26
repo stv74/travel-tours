@@ -20,4 +20,11 @@
 		background: $basic-color;
 		color: $button-color;
 	}
+	&_submit {
+		display: block;
+		width: 10.588em;
+		font-size: 1.063rem;
+		font-weight: 700;
+		line-height: 2.823;
+	}
 }
