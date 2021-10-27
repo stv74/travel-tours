@@ -104,26 +104,33 @@
 					<div class="promo__divider"></div>
 					<div class="promo__wrapper">
 						<div class="promo__select-style">
+							<!-- Специально оставил этот select без value, чтобы потом сравнить результат  -->
 							<select name="Location">
-								<option selected disabled>Location</option>
+								<option hidden>Location</option>
 								<option value="1">The United States</option>
 								<option value="2">Mexico</option>
 								<option value="3">Canada</option>
 							</select>
 						</div>
-						<select name="Activity">
-							<option selected disabled>Activity</option>
-							<option value="1">Bus Tour</option>
-							<option value="2">Hiking Trip</option>
-							<option value="3">Recreation</option>
-						</select>
-						<select name="Grade">
-							<option selected disabled>Grade</option>
-							<option value="1">Econom</option>
-							<option value="2">Business</option>
-							<option value="3">Premium</option>
-						</select>
-						<input type="date" />
+						<div class="promo__select-style">
+							<select name="Activity">
+								<option value="" hidden>Activity</option>
+								<option value="1">Bus Tour</option>
+								<option value="2">Hiking Trip</option>
+								<option value="3">Recreation</option>
+							</select>
+						</div>
+						<div class="promo__select-style">
+							<select name="Grade">
+								<option value="" hidden>Grade</option>
+								<option value="1">Econom</option>
+								<option value="2">Business</option>
+								<option value="3">Premium</option>
+							</select>
+						</div>
+						<div class="promo__select-style">
+							<input type="text" placeholder="Date" />
+						</div>
 					</div>
 					<button class="button button_submit promo__button">Explore</button>
 				</form>
