@@ -99,21 +99,20 @@
 		<section class="promo">
 			<div class="container">
 				<h1 class="promo__title">Explore and Travel</h1>
-				<form action="#" method="post" class="promo__form">
+				<form action="#" method="post" id="selection-form" class="promo__form">
 					<h2 class="promo__form-title">Holiday finder</h2>
 					<div class="promo__divider"></div>
 					<div class="promo__wrapper">
 						<div class="promo__select-style">
-							<!-- Специально оставил этот select без value, чтобы потом сравнить результат  -->
-							<select name="Location">
-								<option hidden>Location</option>
+							<select name="Location" required>
+								<option value="" hidden>Location</option>
 								<option value="1">The United States</option>
 								<option value="2">Mexico</option>
 								<option value="3">Canada</option>
 							</select>
 						</div>
 						<div class="promo__select-style">
-							<select name="Activity">
+							<select name="Activity" required>
 								<option value="" hidden>Activity</option>
 								<option value="1">Bus Tour</option>
 								<option value="2">Hiking Trip</option>
@@ -121,7 +120,7 @@
 							</select>
 						</div>
 						<div class="promo__select-style">
-							<select name="Grade">
+							<select name="Grade" required>
 								<option value="" hidden>Grade</option>
 								<option value="1">Econom</option>
 								<option value="2">Business</option>
@@ -129,7 +128,7 @@
 							</select>
 						</div>
 						<div class="promo__select-style">
-							<input type="text" placeholder="Date" />
+							<input type="text" id="date" name="Date" placeholder="Date" required />
 						</div>
 					</div>
 					<button class="button button_submit promo__button">Explore</button>
@@ -137,5 +136,6 @@
 			</div>
 		</section>
 		<!-- / promo -->
+		<script src="js/script.min.js"></script>
 	</body>
 </html>

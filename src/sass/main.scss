@@ -6,6 +6,10 @@
 
 // 2. Vendors
 @import 'vendors/normalize';
+@import 'vendors/jquery-ui';
+
+// 3. Vendors extension
+@import 'vendors-extensions/jquery-ui';
 
 // 3. Base stuff
 @import 'base/base';
