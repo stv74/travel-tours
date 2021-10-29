@@ -7,32 +7,18 @@ $(document).ready(function () {
 	});
 
 	// Делаем валидацию формы выбора тура
-	function validateForms(form) {
-		$(form).validate({
-			rules: {
-				// name: {
-				// 	required: true,
-				// 	minlength: 2,
-				// },
-				// phone: 'required',
-				// email: {
-				// 	required: true,
-				// 	email: true,
-				// },
-			},
-			messages: {
-				// name: {
-				// 	required: 'Пожалуйста, введите свое имя',
-				// 	minlength: jQuery.validator.format('Введите {0} символа!'),
-				// },
-				// phone: 'Пожалуйста, введите свой номер телефона',
-				// email: {
-				// 	required: 'Пожалуйста, введите свою почту',
-				// 	email: 'Неправильно введен адрес почты',
-				// },
-			},
-		});
-	}
-
-	validateForms('#selection-form');
+	$('#selection-form').validate({
+		rules: {
+			Location: 'required',
+			Activity: 'required',
+			Grade: 'required',
+			Date: 'required',
+		},
+		messages: {
+			Location: 'Choose location, please!',
+			Activity: 'Choose activity, please!',
+			Grade: 'Choose grade, please!',
+			Date: 'Choose date, please!',
+		},
+	});
 });
