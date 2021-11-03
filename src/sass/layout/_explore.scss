@@ -1,9 +1,20 @@
 .explore {
+	position: relative;
 	padding: 23.875em 0 6.9375em;
-	background: url(../img/explore/explore.png) 0 286px no-repeat;
+	background: url(../img/explore/explore.png) calc(50vw - 100%) 286px no-repeat;
 	&__wrapper {
 		width: 28.125em;
 		margin: 0 6.75em 0 auto;
+		&::before {
+			content: '';
+			width: 20px;
+			height: 20px;
+			position: absolute;
+			background-image: url(../icons/decor/cross.svg);
+			transform: rotate(7.49deg);
+			top: 270px;
+			left: calc(50% + 26px);
+		}
 	}
 	&__descr {
 		margin-top: 1.176em;

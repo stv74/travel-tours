@@ -1,7 +1,10 @@
 .promo {
 	min-height: 45.375em;
 	padding-top: 6.5625em;
-	background: url(../img/promo/hero-1x.png) right 105px top 72px no-repeat;
+	background: url(../img/promo/hero-1x.png) right 72px no-repeat;
+	@media (min-width: 1400px) {
+		background-position-x: 50vw;
+	}
 	&__title {
 		width: 5.5625em;
 		margin: 0 0 0 0.469em;
