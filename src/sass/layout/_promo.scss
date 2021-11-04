@@ -6,10 +6,17 @@
 		background-position-x: 50vw;
 	}
 	&__title {
+		position: relative;
 		width: 5.5625em;
 		margin: 0 0 0 0.469em;
+		&::before {
+			@include decor_cross;
+			top: 10px;
+			left: 468px;
+		}
 	}
 	&__form {
+		position: relative;
 		width: 470px;
 		margin: 74px 0 0 30px;
 		&-title {
@@ -18,6 +25,20 @@
 			font-weight: 600;
 			font-size: 1.375rem;
 			color: #202336;
+		}
+		&::before {
+			content: '';
+			width: 26px;
+			height: 26px;
+			position: absolute;
+			background-image: url(../icons/decor/circle-b.png);
+			left: -84px;
+			top: 65px;
+		}
+		&::after {
+			@include decor_circle;
+			right: -80px;
+			bottom: -25px;
 		}
 	}
 	&__divider {

@@ -1,34 +1,15 @@
-// -----------------------------------------------------------------------------
-// This file contains all application-wide Sass mixins.
-// -----------------------------------------------------------------------------
-
-/// Event wrapper
-/// @author Harry Roberts
-/// @param {Bool} $self [false] - Whether or not to include current selector
-/// @link https://twitter.com/csswizardry/status/478938530342006784 Original tweet from Harry Roberts
-@mixin on-event($self: false) {
-  @if $self {
-    &,
-    &:hover,
-    &:active,
-    &:focus {
-      @content;
-    }
-  } @else {
-    &:hover,
-    &:active,
-    &:focus {
-      @content;
-    }
-  }
+@mixin decor_cross {
+	content: '';
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	background-image: url(../icons/decor/cross.svg);
 }
 
-/// Make a context based selector a little more friendly
-/// @author Kitty Giraudel
-/// @param {String} $context
-@mixin when-inside($context) {
-  #{$context} & {
-    @content;
-  }
+@mixin decor_circle {
+	content: '';
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	background-image: url(../icons/decor/circle-sl.png);
 }
-
