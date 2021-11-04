@@ -1,0 +1,33 @@
+.favorites {
+	padding-top: 18.25em;
+	&__wrapper {
+		max-width: 1119px;
+		display: grid;
+		grid-template-columns: repeat(4, 261px);
+		grid-template-rows: 106px 337px;
+		column-gap: 25px;
+		margin: 0 auto;
+	}
+	&__title {
+		grid-column: 1/4;
+	}
+	&__link {
+		align-self: baseline;
+	}
+	&__item {
+		width: 261px;
+		height: 337px;
+	}
+	&__img-1 {
+		background: url(../img/favorites/route-1.jpg) center (center/cover) no-repeat;
+	}
+	&__img-2 {
+		background: url(../img/favorites/route-2.jpg) center (center/cover) no-repeat;
+	}
+	&__img-3 {
+		background: url(../img/favorites/route-3.jpg) center (center/cover) no-repeat;
+	}
+	&__img-4 {
+		background: url(../img/favorites/route-4.jpg) center (center/cover) no-repeat;
+	}
+}
