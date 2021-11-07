@@ -1,22 +1,27 @@
 .favorites {
-	padding-top: 18.25em;
+	padding: 18.25em 0 3.75em;
 	&__wrapper {
 		max-width: 1119px;
 		display: grid;
 		grid-template-columns: repeat(4, 261px);
 		grid-template-rows: 106px 337px;
 		column-gap: 25px;
+		justify-self: baseline;
 		margin: 0 auto;
 	}
 	&__title {
 		grid-column: 1/4;
 	}
 	&__link {
-		align-self: baseline;
+		font-size: 1.063rem;
+		font-weight: 600;
+		color: $button-color;
+		line-height: 3.529;
 	}
 	&__item {
 		width: 261px;
 		height: 337px;
+		border-radius: 8px;
 	}
 	&__img-1 {
 		background: url(../img/favorites/route-1.jpg) center (center/cover) no-repeat;
