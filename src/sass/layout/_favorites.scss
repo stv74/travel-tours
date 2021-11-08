@@ -1,27 +1,69 @@
 .favorites {
 	padding: 18.25em 0 3.75em;
 	&__wrapper {
+		position: relative;
 		max-width: 1119px;
 		display: grid;
 		grid-template-columns: repeat(4, 261px);
 		grid-template-rows: 106px 337px;
 		column-gap: 25px;
-		justify-self: baseline;
 		margin: 0 auto;
 	}
 	&__title {
 		grid-column: 1/4;
+		&::before {
+			@include decor_cross;
+			top: 300px;
+			left: -97px;
+			transform: rotate(7.5deg);
+		}
+		&::after {
+			@include decor_circle;
+			top: 482px;
+			left: 500px;
+		}
 	}
 	&__link {
+		position: relative;
 		font-size: 1.063rem;
 		font-weight: 600;
 		color: $button-color;
 		line-height: 3.529;
+		place-self: start end;
+		margin-right: 15px;
+		&::before {
+			@include decor_circle;
+			top: -30px;
+			left: -112px;
+		}
+		@include arrow;
 	}
 	&__item {
 		width: 261px;
 		height: 337px;
 		border-radius: 8px;
+		&-caption {
+			width: 120px;
+			height: 56px;
+			background-color: $basic-color;
+			border-radius: 0px 6px 0px 0px;
+			margin-top: 281px;
+			padding-top: 11px;
+		}
+		&-title {
+			font-family: $second-font-stack;
+			font-weight: 600;
+			font-size: 17px;
+			line-height: 25px;
+			color: #042521;
+		}
+		&-subtitle {
+			font-family: $second-font-stack;
+			font-weight: 500;
+			font-size: 15px;
+			line-height: 24px;
+			color: #80918e;
+		}
 	}
 	&__img-1 {
 		background: url(../img/favorites/route-1.jpg) center (center/cover) no-repeat;

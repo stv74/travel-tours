@@ -13,3 +13,17 @@
 	position: absolute;
 	background-image: url(../icons/decor/circle-sl.png);
 }
+
+@mixin arrow {
+	&::after {
+		content: '';
+		position: absolute;
+		width: 9px;
+		height: 9px;
+		border-top: 2px solid $button-color;
+		border-right: 2px solid $button-color;
+		transform: rotate(45deg) scale(0.8);
+		top: 26px;
+		right: -13px;
+	}
+}
