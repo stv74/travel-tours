@@ -21,4 +21,7 @@ $(document).ready(function () {
 			Date: 'Choose date, please!',
 		},
 	});
+
+	// Подключаем Slick-slider
+	$('.testimonials__slider').slick();
 });

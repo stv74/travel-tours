@@ -3,7 +3,7 @@
 	background: url(../img/guides/guides-1x.png) calc(50vw - 5%) 10.8125em no-repeat;
 	&__wrapper {
 		position: relative;
-		margin: 9.5em 0 5.4375em 6.25em;
+		margin: 9.5em 0 0 6.25em;
 		max-width: 28.125em;
 	}
 	&__title {
@@ -19,6 +19,9 @@
 		margin-bottom: 2.29em;
 		&::before {
 			@include decor_cross;
+			left: 430px;
+			top: 275px;
+			transform: rotate(20.42deg);
 		}
 		&::after {
 			@include decor_cross;

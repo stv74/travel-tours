@@ -47,6 +47,7 @@ function scripts() {
 		'node_modules/jquery/dist/jquery.min.js',
 		'src/js/jquery-ui.js',
 		'src/js/jquery.validate.js',
+		'src/js/slick.js',
 		'src/js/script.js', // Пользовательские скрипты, использующие библиотеки, должны быть подключены в конце
 	])
 		.pipe(concat('script.min.js')) // Конкатенируем в один файл
