@@ -23,5 +23,7 @@ $(document).ready(function () {
 	});
 
 	// Подключаем Slick-slider
-	$('.testimonials__slider').slick();
+	$('.testimonials__slider').slick({
+		infinite: false,
+	});
 });

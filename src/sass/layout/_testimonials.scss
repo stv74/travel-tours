@@ -7,9 +7,14 @@
 		max-width: 71em;
 		margin-top: 2.6875em;
 	}
+	&__slider-frame {
+		display: flex !important;
+		justify-content: space-between;
+	}
 	&__wrap {
 		margin-left: 6.25em;
 		width: 450px;
+		align-self: center;
 	}
 	&__text {
 		font-size: 1.5rem;
@@ -17,7 +22,7 @@
 		color: #000000;
 	}
 	&__autor {
-		font-family: Inter;
+		font-family: $second-font-stack;
 		font-weight: bold;
 		font-size: 1.375rem;
 		line-height: 2.18;
@@ -25,10 +30,34 @@
 		margin-top: 1.818em;
 	}
 	&__descr {
-		font-family: Inter;
+		font-family: $second-font-stack;
 		font-weight: 400;
 		font-size: 1.125rem;
 		line-height: 1.4;
 		color: rgba(0, 0, 0, 0.85);
+	}
+	&__photo {
+		position: relative;
+		img {
+			width: 384px;
+			height: 491px;
+			object-fit: cover;
+			border-radius: 16px;
+		}
+		&::before {
+			content: '';
+			width: 42px;
+			height: 42px;
+			position: absolute;
+			background-image: url(../icons/decor/circle-vb.png);
+		}
+		&::after {
+			content: '';
+			width: 32px;
+			height: 32px;
+			position: absolute;
+			background-image: url(../icons/decor/cross-b.png);
+			z-index: 2;
+		}
 	}
 }
