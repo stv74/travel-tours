@@ -6,6 +6,18 @@
 	&__slider {
 		max-width: 71em;
 		margin-top: 2.6875em;
+		position: relative;
+		&::before {
+			content: '';
+			position: absolute;
+			width: 132px;
+			height: 60px;
+			background-color: $basic-color;
+			border-radius: 16px 0px 0px 0px;
+			top: 469px;
+			right: 16px;
+			z-index: 1;
+		}
 	}
 	&__slider-frame {
 		display: flex !important;
@@ -38,6 +50,7 @@
 	}
 	&__photo {
 		position: relative;
+		padding: 16px;
 		img {
 			width: 384px;
 			height: 491px;
@@ -50,14 +63,18 @@
 			height: 42px;
 			position: absolute;
 			background-image: url(../icons/decor/circle-vb.png);
+			top: 0;
+			right: 0;
+			z-index: -1;
 		}
 		&::after {
 			content: '';
-			width: 32px;
-			height: 32px;
+			width: 37px;
+			height: 37px;
 			position: absolute;
-			background-image: url(../icons/decor/cross-b.png);
-			z-index: 2;
+			background-image: url(../icons/decor/cross-b.svg);
+			top: 486px;
+			left: 0;
 		}
 	}
 }
