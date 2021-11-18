@@ -7,6 +7,7 @@
 		max-width: 71em;
 		margin-top: 2.6875em;
 		position: relative;
+		// Подложка для кнопок переключения
 		&::before {
 			content: '';
 			position: absolute;
@@ -19,6 +20,8 @@
 			z-index: 1;
 		}
 	}
+
+	// Отдельный слайд
 	&__slider-frame {
 		display: flex !important;
 		justify-content: space-between;
@@ -75,6 +78,57 @@
 			background-image: url(../icons/decor/cross-b.svg);
 			top: 486px;
 			left: 0;
+		}
+	}
+
+	// Кнопки переключения
+	.slick-prev,
+	.slick-next {
+		position: absolute;
+		width: 40px;
+		height: 40px;
+		font-size: 0px;
+		line-height: 0;
+		background-color: transparent;
+		border: 2px solid $basic-color-second;
+		border-radius: 50%;
+		opacity: 0.75;
+		top: 466px;
+		z-index: 2;
+		cursor: pointer;
+		&:hover,
+		&:focus {
+			opacity: 1;
+		}
+		&.slick-disabled {
+			opacity: 0.25;
+		}
+		&::before {
+			content: '';
+			position: absolute;
+			width: 9px;
+			height: 9px;
+			top: 14px;
+		}
+	}
+
+	.slick-prev {
+		right: 80px;
+		&::before {
+			border-left: 2px solid $basic-color-second;
+			border-bottom: 2px solid $basic-color-second;
+			transform: rotate(45deg);
+			right: 12px;
+		}
+	}
+
+	.slick-next {
+		right: 15px;
+		&::before {
+			border-right: 2px solid $basic-color-second;
+			border-bottom: 2px solid $basic-color-second;
+			transform: rotate(-45deg);
+			right: 14px;
 		}
 	}
 }
