@@ -1,9 +1,7 @@
-$(document).ready(function () {
+$(function () {
 	// Активируем календарь для поля Date формы выбора тура
-	$(function () {
-		$('#date').datepicker({
-			dateFormat: 'dd.mm.yy',
-		});
+	$('#date').datepicker({
+		dateFormat: 'dd.mm.yy',
 	});
 
 	// Делаем валидацию формы выбора тура
@@ -25,5 +23,8 @@ $(document).ready(function () {
 	// Подключаем Slick-slider
 	$('.testimonials__slider').slick({
 		infinite: false,
+		speed: 500,
+		fade: true,
+		cssEase: 'linear',
 	});
 });
