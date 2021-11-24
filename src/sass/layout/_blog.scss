@@ -1,0 +1,41 @@
+.blog {
+	padding: 16.875em 0 4.6875em;
+	&__wrapper {
+		position: relative;
+		max-width: 1119px;
+		display: grid;
+		grid-template-columns: repeat(4, 261px);
+		grid-template-rows: 106px 337px;
+		column-gap: 25px;
+		margin: 0 auto;
+	}
+	&__title {
+		grid-column: 1/4;
+		&::before {
+			@include decor_cross;
+			top: 300px;
+			left: -97px;
+			transform: rotate(7.5deg);
+		}
+		&::after {
+			@include decor_circle;
+			top: 482px;
+			left: 500px;
+		}
+	}
+	&__link {
+		position: relative;
+		font-size: 1.063rem;
+		font-weight: 600;
+		color: $button-color;
+		line-height: 3.529;
+		place-self: start end;
+		margin-right: 15px;
+		&::before {
+			@include decor_circle;
+			top: -30px;
+			left: -112px;
+		}
+		@include arrow;
+	}
+}

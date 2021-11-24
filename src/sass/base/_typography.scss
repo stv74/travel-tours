@@ -23,11 +23,15 @@ h1 {
 h2 {
 	font-size: 2.25rem;
 	line-height: 1.39;
-	color: #000000;
+	color: $basic-color-second;
 }
 
 h3 {
 	font-family: $second-font-stack;
+	font-weight: 700;
+	font-size: 1.1875rem;
+	line-height: 1.58;
+	color: $basic-color-second;
 }
 
 p {
