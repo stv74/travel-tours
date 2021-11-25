@@ -31,6 +31,9 @@
 		line-height: 3.529;
 		place-self: start end;
 		margin-right: 15px;
+		:hover {
+			color: $button-color;
+		}
 		&::before {
 			@include decor_circle;
 			top: -30px;

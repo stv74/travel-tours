@@ -5,7 +5,7 @@
 		max-width: 1119px;
 		display: grid;
 		grid-template-columns: repeat(4, 261px);
-		grid-template-rows: 106px 337px;
+		grid-template-rows: 106px 446px;
 		column-gap: 25px;
 		margin: 0 auto;
 	}
@@ -31,11 +31,50 @@
 		line-height: 3.529;
 		place-self: start end;
 		margin-right: 15px;
+		:hover {
+			color: $button-color;
+		}
 		&::before {
 			@include decor_circle;
 			top: -30px;
 			left: -112px;
 		}
 		@include arrow;
+	}
+	&__card {
+		display: grid;
+		grid-template-rows: 231px 187px auto;
+		&-img {
+			border-top-left-radius: 10px;
+			border-top-right-radius: 10px;
+		}
+		&-title {
+			margin-top: 0.8125em;
+			overflow: hidden;
+		}
+		&-descr {
+			font-family: $second-font-stack;
+			font-weight: 400;
+			font-size: 0.9375rem;
+			line-height: 1.73;
+			height: 5.19em;
+			margin-top: 0.8125em;
+			overflow: hidden;
+		}
+		&-link {
+			position: absolute;
+			bottom: 0;
+			font-family: $second-font-stack;
+			font-weight: 600;
+			font-size: 0.9375rem;
+			line-height: 1.87;
+			color: $button-color;
+			:hover {
+				color: $button-color;
+			}
+		}
+	}
+	&__text {
+		overflow: hidden;
 	}
 }
