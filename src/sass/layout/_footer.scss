@@ -1,3 +1,50 @@
-// -----------------------------------------------------------------------------
-// This file contains all styles related to the footer of the site/application.
-// -----------------------------------------------------------------------------
+.footer {
+	padding: 4.375em 3.125em 2em;
+	background-color: #f9f9fb;
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__about {
+		max-width: 22.4375em;
+	}
+	&__logo {
+		height: 2.75em;
+		img {
+			height: 100%;
+		}
+		margin-top: 0.5em;
+	}
+	&__descr {
+		font-size: 1.125rem;
+		line-height: 1.56;
+		margin-top: 1.45em;
+	}
+	&__copy {
+		font-size: 1.063rem;
+		margin-top: 3.235em;
+	}
+	&__link {
+		max-width: 10.0625em;
+		a {
+			display: block;
+		}
+	}
+	&__social {
+		display: flex;
+		width: 248px;
+		justify-content: space-between;
+		margin: 0 auto;
+		a {
+			font-size: 1.4375rem;
+			line-height: 1;
+			color: $basic-color-second;
+		}
+	}
+	hr {
+		max-width: 1219px;
+		margin: 81px auto 30px auto;
+		border: 0.6px solid #c4c4c4;
+		border-bottom: none;
+	}
+}
