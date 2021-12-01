@@ -25,7 +25,11 @@
 		margin-top: 3.235em;
 	}
 	&__link {
-		max-width: 10.0625em;
+		max-width: 10.9375em;
+		h3 {
+			font-family: $basic-font-stack;
+			line-height: 3.16;
+		}
 		a {
 			display: block;
 		}
